@@ -29,7 +29,8 @@ class MarvelServices {
             description: char.description ? `${char.description.slice(0, 210)}...` : 'Описания данного персонажа нет!',
             thumbnail: char.thumbnail.path + '.' + char.thumbnail.extension,
             homepage: char.urls[0].url,
-            wiki: char.urls[1].url
+            wiki: char.urls[1].url,
+            comics: char.comics.items  
         }
     }
 }
